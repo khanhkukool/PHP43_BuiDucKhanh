@@ -1,0 +1,62 @@
+#head{
+	border-style: solid;
+	border-width: 3px;
+	height: 20px;
+	width: 700px;
+	border-bottom: 0px;
+}
+
+#menu{
+	border-style: solid;
+	border-width: 3px;
+	height: 600px;
+	width: 700px;
+}
+
+#in-menu{
+	height: 540px;
+	width:640px;
+	margin: 30px 30px 30px 30px;
+}
+
+#menu1{
+	height: 20%;
+}
+
+#menu2{
+	height: 20%;
+	margin-top:4%;
+}
+
+#menu3{
+	height: 20%;
+	margin-top:4%;
+}
+
+#menu4{
+	height: 20%;
+	margin-top:4%;
+}
+#menu1-1, #menu2-1, #menu3-1{
+	background: #ea9999;
+	border-style: solid;
+	border-width: 3px;
+	height: 100%;
+	width: 25%;
+	float: left;
+}
+
+#menu1-2, #menu2-2, #menu3-2{
+	background: #9fc5f8;
+	border-style: solid;
+	border-width: 3px;
+	height: 100%;
+	width: 70%;
+	float:right;
+}
+
+#menu4{
+	background: #ffe599;
+	border-style: solid;
+	border-width: 3px;
+}

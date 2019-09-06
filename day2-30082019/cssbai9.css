@@ -1,0 +1,21 @@
+body{
+	background-color: #d8da3d;
+}
+
+#div1{
+	color: #800080;
+}
+
+#head{
+	color: #800080;
+	font-size: 25px;
+}
+
+#content{
+	color: #800080;
+}
+
+#bottom{
+	color: #800080;
+	font-family: 'arial';
+}

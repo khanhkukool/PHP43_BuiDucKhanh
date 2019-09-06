@@ -1,0 +1,26 @@
+body{
+	background-color: #ccccff;
+}
+
+#head{
+	color: #000000;
+	font-size: 25px;
+}
+
+#menu-1{
+	color: #550000;
+}
+
+#menu-2{
+	color: #000055;
+}
+
+#menu-3{
+	color: #550000;
+	border-style: dashed;
+	border-width: 2px;
+}
+
+#menu-4{
+	color:  #000055;
+}

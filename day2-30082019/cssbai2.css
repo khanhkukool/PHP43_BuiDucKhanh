@@ -1,0 +1,25 @@
+body{
+	background-color: #008000;
+}
+
+#head{
+	margin: 20px 0px 0px 0px;
+}
+
+#div1{
+	margin: 20px 0px 0px 0px;
+}
+
+#div2{
+	margin: 20px 0px 0px 0px;
+}
+
+#div3{
+	margin: 20px 0px 0px 0px;
+	background-color: #ff0000;
+}
+
+#ul1{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
