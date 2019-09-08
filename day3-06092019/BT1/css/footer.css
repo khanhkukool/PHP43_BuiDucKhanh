@@ -1,0 +1,79 @@
+.footer{
+	padding-top: 50px;
+}
+
+.footer-1{
+	background-color: #2f2f2f;
+    width: 100%;
+    height: 500px;
+}
+
+.introduce{
+    padding: 70px 0;
+}
+
+.lastest-posts, .about, .stay-connected{
+	
+}
+
+.lastest-posts{
+	float: left;
+	width: 25%;
+}
+
+.calendar{
+
+}
+
+.calendar-day{
+
+}
+
+.calendar-content{
+
+}
+
+.about{
+	float: left;
+	width: 30%;
+}
+
+.about-head{
+
+}
+
+.about-content{
+
+}
+.stay-connected{
+	float: left;
+	width: 25%;
+}
+
+.stay-connected-head{
+
+}
+
+.stay-connected-content{
+
+}
+
+.stay-connected-content-information{
+
+}
+
+.stay-connected-content-information-icon{
+
+}
+
+.stay-connected-content-information-name{
+
+}
+
+.footer-2{
+
+}
+
+.web-design{
+	clear: both;
+}

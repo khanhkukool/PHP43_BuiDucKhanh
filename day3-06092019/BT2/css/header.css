@@ -1,0 +1,27 @@
+@font-face{
+	font-family: 'QlassikBold_TB';
+	src: url("../fonts/QlassikBold_TB.ttf");
+}
+
+body{
+	margin: 0;
+}
+.header{
+	background: #d9e9ea;
+    height: 100px;
+}
+
+.content{
+	width: 80%;
+    margin: 0 auto;
+}
+
+.header-title{
+	padding: 37px 18px;
+    font-size: 26px;
+    font-family: 'QlassikBold_TB';
+    color: #3a6669;
+}
+
+
+
