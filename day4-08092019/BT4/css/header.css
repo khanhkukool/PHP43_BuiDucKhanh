@@ -13,34 +13,88 @@
 	src: url('../fonts/Ubuntu-Light.ttf');
 }
 
-.header-title h1{
-	display: inline;
-    float: left;
-    font-family: 'Inconsolata';
-    letter-spacing: 10px;
+body{
+	font-family: 'Arial';
 }
 
-.header-list{
-	float: right;
-	margin: 27px 0;
+.header-clear-1{
+	background: #2485ca;
+	height: 10px;
 }
 
-.header-link{
-	display: inline;
-	font-family: Playfairdisplay;
-    margin: 0 23px;
-}
-
-.header-link a{
-	text-decoration: none;
-    color: #626262;
-}
-
-.title-container{
-	max-width: 1500px;
+.container{
+	max-width: 1200px;
     margin: 0 auto;
 }
 
-.header-picture img{
-	width: 100%;
+.header-1-left{
+	float: left;
+}
+
+.header-1-right{
+	float: right;	
+	margin: 22px 0;
+}
+
+.header-1-title p{
+	display: inline;
+}
+
+.header-1-title-small{
+	position: relative;
+    top: -28px;
+    left: 50px;
+    font-size: 12px;
+}
+
+.header-1-search{
+	border: #f4f4f4 solid 1px;
+}
+
+.search{
+	padding: 10px 10px;
+    border-radius: 7px;
+}
+
+.header-2-content{
+	clear: both;
+}
+
+.header-1-link{
+	display: inline;
+	margin: 0 0px;
+	background: #fff;
+    padding: 1px 15px;
+}
+
+.header-1-link a{
+	text-decoration: none;
+    color: #000;
+}
+
+.choose, .header-clear-2{
+	background: #efefef;
+}
+
+.header-clear-2{
+	height: 80px;
+	clear: both;
+}
+
+.header-1-list{
+	margin-bottom: 0;
+	float: right;
+}
+
+.header-3-content{
+	background: #2894d0;
+    height: 100px;
+}
+
+.header-3-title{
+	padding: 31px 0px;
+}
+
+.header-clear-3{
+	height: 30px;
 }

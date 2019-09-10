@@ -1,37 +1,44 @@
 .footer{
-	background: #f0f0f0;
-	height: 50px;
+	background: #2077c4;
+    height: 100px;
+    clear: both;
+    color: #fff;
 }
 
-.connect{
-	float: right;
-	margin: 11px 0;
-}
-
-.connect p{
-	display: inline;
-	font-size: 18px;
-}
-
-.connect-list{
-	display: inline;
-}
-
-.produce{
+.footer-left{
 	float: left;
-    margin: 18px 0;
+	width: 50%;
 }
 
-.connect li{
+.footer-right{
+	float: left;
+	width: 50%;
+}
+
+.footer-right p{
+	float: right;
+}
+
+.footer-link{
 	display: inline;
+	border-right: solid 1px;
 }
 
-.produce a{
+.footer-left p{
+	margin-bottom: 0;
+}
+
+.footer-list{
+	margin: 0;
+	padding: 0;
+}
+
+.footer-link a{
 	text-decoration: none;
-    color: #000;
-    font-family: 'Playfairdisplay';
+	color: #fff;
+	margin-right: 5px;
 }
 
-.produce-right{
-	margin: 0px 15px;
+.footer-link-bottom{
+	border-right: 0;
 }

@@ -47,3 +47,7 @@ body{
 	color: #ffffff;
 	text-decoration: none;
 }
+
+.header-li:last-child{
+	padding-right:0;
+}

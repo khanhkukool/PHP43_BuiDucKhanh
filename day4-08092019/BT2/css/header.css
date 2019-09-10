@@ -3,6 +3,10 @@
 	src: url("../fonts/QlassikBold_TB.ttf");
 }
 
+body{
+	height: 0;
+}
+
 .header{
 	background: #e1f1f2;
     padding: 10px 0;
