@@ -1,0 +1,204 @@
+/*import font-face*/
+@font-face {
+	font-family: 'Pacifico';
+	src: url("../fonts/Pacifico.ttf");
+}
+
+/*@font-face {
+	font-family: 'Pacifico 2', sans-serif;
+	src: url("../fonts/Pacifico2.ttf");
+}*/
+.header {
+	background: #2f2f2f;
+	padding: 10px 15px;
+}
+
+p {
+	line-height: 20px;
+	color: #565656;
+}
+
+.header span {
+	font-size: 40px;
+    color: #fff;
+    font-family: 'Pacifico';
+}
+
+body {
+	font-family: 'Myriad Regular';
+	font-size: 14px;
+}
+
+/* CSS HEADER */
+.header-li, .header-ul {
+	display: inline-block;
+}
+
+.header-ul {
+	float: right;
+	margin-top: 20px;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.header-link {
+	color: #fff;
+    text-decoration: none;
+    font-family: 'Myriad Pro';
+}
+
+.header-li {
+	padding: 10px 25px;
+}
+
+.header-li:last-child{
+	padding-right: 0;
+}
+
+/* END CSS HEADER */
+
+/* CSS  MAIN */
+
+/* MAIN TOP */
+.main-top {
+	background: #f1f1f1;
+    padding: 40px 0;
+}
+
+.col-md-5 {
+	width: 40%;
+    float: left;
+}
+
+.col-md-7 {
+	float: left;
+    width: 60%;
+}
+
+.row {
+	display: table;
+}
+
+/* .top-left-heading { */
+h1 {
+	color: #0e1d1f;
+	margin-top: 0;
+}
+
+.top-left-paragraph {
+	color: #565656;
+    line-height: 20px;
+}
+
+.learn-more-content {
+	background: #f99640;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.learn-more-link {
+	color: #fff;
+    text-decoration: none;
+    font-family: 'Myriad Pro';
+}
+/* END CSS MAIN TOP */
+
+/* CSS MAIN CENTER */
+.main-center {
+	padding: 40px 0;
+}
+
+.col-md-4 {
+	width: 33.33%;
+    float: left;
+}
+
+.center-content {
+	padding: 0 25px;
+}
+
+.main-center .row{
+	margin: 0 -25px;
+}
+
+.center-image {
+	width: 100%;
+    height: 170px;
+    background: #2f2f2f;
+}
+
+.center-heading-title {
+	color: #303030;
+    font-family: 'Myriad Pro';
+}
+/* END CSS MAIN CENTER */
+
+/* CSS MAIN BOTTOM */
+.main-bottom {
+	background: #2f2f2f;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.datetime-wrap {
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.table-cell {
+	display: inline-block;
+}
+
+.month {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.date {
+	font-weight: bold;
+}
+
+.bottom-left-item {
+	margin-bottom: 15px;
+}
+
+.bottom-title {
+	margin: 0;
+    font-size: 16px;
+}
+
+.bottom-summary {
+	margin-top: 5px;
+	color: #fff;
+}
+
+.social-item{
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.social-link{
+	color: #fff;
+    text-decoration: none;
+}
+
+.social-link p{
+	display: inline-block;
+	margin: 15px;
+    color: #fff
+}
+
+.bottom-item{
+	
+}
+/* END CSS MAIN BOTOM */
+
+/* END CSS MAIN */

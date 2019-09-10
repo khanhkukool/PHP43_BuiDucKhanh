@@ -1,0 +1,26 @@
+.footer{
+	clear: both;
+	position: relative;
+    top: -900px;
+}
+
+.footer-link{
+	display: inline;
+	border-right: solid #463328 1px;
+    margin-right: 5px;
+    padding-right: 10px;
+}
+
+.footer-link a{
+	color: #463328;
+	font-family: 'Arial';
+	text-decoration: none;
+}
+
+.footer-link-bottom{
+	border-right: none;
+}
+
+.footer-list{
+	padding: 0;
+}
