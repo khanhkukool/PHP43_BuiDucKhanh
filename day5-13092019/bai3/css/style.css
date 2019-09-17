@@ -1,0 +1,51 @@
+.content{
+	    margin: 0 auto;
+    width: 50%;
+    border: #e0e0e0 solid 2px;
+    padding: 15px 15px;
+}
+
+.content h1{
+	text-align: center;
+}
+
+.blue{
+	    border: 0px;
+    border-bottom: #000 solid 1px;
+}
+
+.light{
+	    margin: 0 40px;
+    border: 0px;
+    border-bottom: #000 solid 1px;
+}
+
+.number{
+	    border: 0px;
+    border-bottom: #000 solid 1px;
+}
+
+.row{
+	margin: 15px 0;
+}
+
+.col-md-8, .col-8{
+	border: 0px;
+    border-bottom: #000 solid 1px;
+}
+
+.exercise{
+	    border: 0px;
+    border-bottom: #000 solid 1px;
+}
+
+.create{
+	background: #2196f3;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.fa-trash{
+	color: #2196f3;
+	float: right;
+}

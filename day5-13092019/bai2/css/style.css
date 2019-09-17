@@ -1,0 +1,39 @@
+.remove{
+	background: #007bff;
+    color: #fff;
+}
+
+.binoculars{
+	background: #28a745;
+    color: #fff;
+}
+
+.cart{
+	    background: #17a2b8;
+    color: #fff;
+}
+
+.calendar{
+    background: #ffc107;
+}
+
+.delete{
+    background: #ffffff;
+}
+
+.wifi{
+background: #ffffff;
+    color: #28a745;
+    border:#28a745 solid 1px;
+}
+
+.upload{
+    background: #343a40;
+    color: #fff;
+}
+
+.download{
+	background: #ffffff;
+    color: #28a745;
+    border:#28a745 solid 1px;
+}
