@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 2</title>
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="js/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<form id="form1" onsubmit="return showPopup()">
+			<h1>
+				Form Information
+			</h1>
+			<div class="row name">
+				<div class="col-md-3 col-12">
+					Họ tên
+				</div>
+				<div class="col-md-9 col-12">
+					<input type="email" name="name" placeholder="Nhập tên của bạn" id="name">
+				</div>
+			</div>
+			<div class="row mail">
+				<div class="col-md-3 col-12">
+					Email
+				</div>
+				<div class="col-md-9 col-12">
+					<input type="text" name="age" placeholder="Nhập email của bạn" id="email">
+				</div>
+			</div>
+			<div id="show">
+				<input type="submit" name="show" value="Show popup"
+			</div>
+		</form>
+		<p id="result">
+		
+		</p>
+		<script type="text/javascript">
+			function showPopup(){
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var result = '';
+				result += "Tên vừa nhập: "+ name;
+				result += "\n";
+				result += "Email vừa nhập: " + email;
+				
+				document.getElementById('result').innerHTML = alert(result);
+
+				return false;
+			}
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1</title>
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="js/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<form id="form1" onsubmit="return showInfo()">
+			<h1>
+				Form Information
+			</h1>
+			<div class="row name">
+				<div class="col-md-3 col-12">
+					Họ tên
+				</div>
+				<div class="col-md-9 col-12">
+					<input type="text" name="name" placeholder="Nhập tên của bạn" id="name">
+				</div>
+			</div>
+			<div class="row age">
+				<div class="col-md-3 col-12">
+					Tuổi
+				</div>
+				<div class="col-md-9 col-12">
+					<input type="text" name="age" placeholder="Nhập tuổi của bạn" id="age">
+				</div>
+			</div>
+			<div id="show">
+				<input type="submit" name="show" value="Hiển thị thông tin">
+			</div>
+		</form>
+		<b id="result">
+		
+		</b>
+		<script type="text/javascript">
+			function showInfo(){
+				var name = document.getElementById('name').value;
+				var age = document.getElementById('age').value;
+				var result = '';
+				result += "Tên vừa nhập: "+ name;
+				result += "<br />";
+				result += "Tuổi vừa nhập: " + age;
+				
+				document.getElementById('result').innerHTML = result;
+
+				return false;
+			}
+		</script>
+	</div>
+</body>
+</html>
