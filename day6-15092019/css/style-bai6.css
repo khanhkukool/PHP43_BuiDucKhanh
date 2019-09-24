@@ -1,0 +1,81 @@
+@media (max-width: 767px){
+	.col-header-logo{
+		flex: 100%;
+	}
+
+	.col-email{
+		margin: 5px 0;
+	}
+
+	.wrap-email{
+		width: 100%;
+	}
+}
+
+body{
+	    background-color: #ecf0f1;
+}
+
+.container{
+	    max-width: 98%;
+}
+
+.header{
+	    margin: 20px 0;
+}
+
+.logo{
+	margin: 0 auto;
+    display: block;
+}
+
+.col-header-content b{
+	    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+
+.beta p{
+	    font-size: 16px;
+    text-align: center;
+}
+
+.wrap-email{
+	width: 100%;
+    float: right;
+}
+
+.btn-danger{
+	width: 100%;
+	background-color: #e74c3c;
+}
+
+.row-icon{
+	    margin: 25px 0;
+}
+
+.wrap-icon{
+	border:#e4e9ea solid 1px;
+	height: 220px;
+}
+
+.content-main{
+	    max-width: 90%;
+    margin: 0 auto;
+}
+
+.picture-icon i{
+	color: #e74c3c;
+	display: block;
+    text-align: center;
+}
+
+.picture-icon{
+	    margin: 10px 0;
+}
+
+.header-icon b, .content-icon p{
+	    display: block;
+    text-align: center;
+
+}

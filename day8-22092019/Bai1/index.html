@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style-bai1.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+</head>
+<body>
+	<div class="container">
+		<form class="form1" onsubmit="return result()">
+			<h1>Thực hành toán tử số học</h1>
+			<hr>
+			<p id="error" style="color: red;"></p>
+			<div class="row inputa">
+				<div class="col-md-6 col-12">
+					Nhập vào số a:
+				</div>
+				<div class="col-md-6 col-12">
+					<input type="number" name="numbera" id="numbera" class="form-control">
+				</div>
+			</div>
+			<div class="row inputb">
+				<div class="col-md-6 col-12">
+					Nhập vào số b:
+				</div>
+				<div class="col-md-6 col-12">
+					<input type="number" name="numberb" id="numberb" class="form-control">
+				</div>
+			</div>
+			<div class="submit">
+				<button type="submit" class="btn btn-primary" id="sum">a + b</button>
+				<button type="submit" class="btn btn-success" id="sub">a - b</button>
+				<button type="submit" class="btn btn-danger" id="mul">a * b</button>
+				<button type="submit" class="btn btn-warning" id="div">a / b</button>
+				<button type="submit" class="btn btn-info" id="remain">a % b</button>
+				<button type="submit" class="btn btn-success" id="sumx2">a++</button>
+				<button type="submit" class="btn btn-primary" id="x2sum">++a</button>
+				<button type="submit" class="btn btn-danger" id="sub_2">a--</button>
+				<button type="submit" class="btn btn-warning" id="_2sub">--a</button>
+				<br>
+				<button type="submit" class="btn btn-warning" id="reset">Reset dữ liệu</button>
+			</div>
+			<p id="result"></p>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function check(){
+			checksum =  document.getElementById(sum)
+			if (document.getElementById('sum')) 
+		}
+		function result(){
+			var number1 = document.getElementById('numbera').value;
+			var number2 = document.getElementById('numberb').value;
+
+			if (number1 == '' || number2 == '') {
+				document.getElementById('error').innerHTML = "Không được để trống dữ liệu";
+				document.getElementById('result').innerHTML = '';
+			}
+
+			else if(isNaN(number1) || isNaN(number2)) {
+				document.getElementById('error').innerHTML = "Cập nhật dữ liệu là số";
+				document.getElementById('result').innerHTML = '';
+			}
+
+			else {
+				number1 = parseInt(number1);
+				number2 = parseInt(number2);
+				var sum = number1 + number2;
+				var sub = number1 - number2;
+				var mul = number1 * number2;
+				var div = number1 / number2;
+				var remain = number1 % number2;
+				var sum2 = number1;
+				var x2sum = number1 + 1;
+				var sum_2 = number1;
+				var _2sum = number1 - 1;
+				document.getElementById('result').innerHTML = "a + b = "+ sum;
+				document.getElementById('result').innerHTML = "a - b = "+ sub;
+				document.getElementById('result').innerHTML = "a * b = "+ mul;
+				document.getElementById('result').innerHTML = "a / b = "+ div;
+				document.getElementById('result').innerHTML = "a % b = "+ remain;
+				document.getElementById('result').innerHTML = "a++ = "+ sumx2;
+				document.getElementById('result').innerHTML = "++a = "+ x2sum;
+				document.getElementById('result').innerHTML = "a-- = "+ sum_2;
+				document.getElementById('result').innerHTML = "--a = "+ _2sum;
+				document.getElementById('error').innerHTML = '';
+			}
+			return false;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style-bai2.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+</head>
+<body>
+	<div class="container">
+		<form class="form1" onsubmit="return check()">
+			<p id="error" style="color: red;"></p>
+			<div class="row input">
+				<div class="col-md-6 col-12">
+					Nhập vào số a:
+				</div>
+				<div class="col-md-6 col-12">
+					<input type="number" name="number" id="number" class="form-control">
+				</div>
+				<button type="submit" class="btn btn-primary">Kiểm tra</button>
+			</div>
+			<p id="result" style="color: blue;"></p>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function check(){
+			var number = document.getElementById('number').value;
+
+			if((number >=1 && number <=10) || (number >=50 && number <=100) ){
+				document.getElementById('result').innerHTML = number + " nằm trong khoảng 1 - 10 hoặc 50 - 100"
+			}
+			else if (number == '') {
+				document.getElementById('error').innerHTML = "KHông được để trống";
+				document.getElementById('result').innerHTML = '';
+			}
+			else if(isNaN(number)) {
+				document.getElementById('error').innerHTML = "Bắt buộc phải nhập số";
+				document.getElementById('result').innerHTML = '';
+			}
+			else{
+				document.getElementById('result').innerHTML = number + " không nằm trong khoảng 1 - 10 hoặc 50 - 100"
+			}
+			return false;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style-bai3.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+</head>
+<body>
+	<div class="container">
+		<form class="form1" onsubmit="return check()">
+			<h1>Giải phương trình bậc nhất ax + b = 0</h1>
+			<hr>
+			<p id="error" style="color: red;"></p>
+			<div class="row inputa">
+				<div class="col-md-6 col-12">
+					Nhập vào hệ số a:
+				</div>
+				<div class="col-md-6 col-12">
+					<input type="number" name="numbera" id="numbera" class="form-control">
+				</div>
+			</div>
+			<div class="row inputb">
+				<div class="col-md-6 col-12">
+					Nhập vào hệ số b:
+				</div>
+				<div class="col-md-6 col-12">
+					<input type="number" name="numberb" id="numberb" class="form-control">
+				</div>
+			</div>
+			<p>Phương trình bậc nhất của bạn đang có dạng</p>
+			<P id="add" style="color: blue;"></P>
+			<div class="submit">
+				<button type="submit" class="btn btn-primary">Tìm x</button>
+			</div>
+			<p id="result" style="color: green;"></p>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function check(){
+			var number1 = document.getElementById('numbera').value;
+			var number2 = document.getElementById('numberb').value;
+			var result = (0 - number2)/number1;
+
+			document.getElementById('add').innerHTML = number1 + "x " + "+ " + number2 + " = 0";
+			if(number1 != 0){
+				document.getElementById('result').innerHTML = "x = " + result;
+			}
+			else{
+				document.getElementById('error').innerHTML = "Hệ số a phải khác 0";
+			}
+			return false;
+		}
+	</script>
+</body>
+</html>

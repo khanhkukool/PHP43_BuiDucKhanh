@@ -1,0 +1,15 @@
+@media (max-width: 767px){
+}
+
+.form1{
+	max-width: 50%;
+    margin: 0 auto;
+}
+
+.submit{
+	margin:10px 0;
+}
+
+.submit .btn{
+	margin: 5px 0;
+}
