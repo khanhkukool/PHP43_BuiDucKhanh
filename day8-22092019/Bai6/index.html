@@ -32,7 +32,6 @@
 				</div>
 			</div>
 				<button type="submit" class="btn btn-primary">Kiểm tra</button>
-			</div>
 			<p id="count"></p>
 			<p id="result" style="color: green;"></p>
 		</form>
@@ -40,25 +39,14 @@
 	<script type="text/javascript">
 		function check(){
 			var string_first = document.getElementById('string-first').value;
-			var count_first = 0;
-			var split_first = [];
-			for(var i = 0; i < string_first.length; i++){
-				if(string_first[i]==" "){
-					count_first++;
-				}
- 			}
- 			// document.getElementById('count').innerHTML = count_first;
- 			for(var i = 0; i <= count_first; i++){
- 				split_first[i] = string_first.split(' ');
- 				document.getElementById('result').innerHTML = split_first[i];
- 			}
-			// document.getElementById('result').innerHTML = dem_first;
-			// var split_string_first = [];
-			// for(var i = 0;i <= dem_first;i++){
-
-			// }
-			// var split_string_first = string_first.split(' ');
-			// document.getElementById('result').innerHTML = split_string_first;
+			var string_second = document.getElementById('string-second').value;
+			var find = string_first.search(string_second);
+			if(find == -1){
+				document.getElementById('result').innerHTML = "Chuỗi " + "<b>" + string_second + "</b>" + " không tồn tại trong chuỗi ban đầu " + "<b>" + string_first + "</b>";
+			}
+			else{
+				document.getElementById('result').innerHTML = "Chuỗi " + "<b>" + string_second + "</b>" + " tồn tại trong chuỗi ban đầu " + "<b>" + string_first + "</b>";
+			}
 			return false;
 		}
 	</script>
