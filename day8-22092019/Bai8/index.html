@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 8</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style-bai8.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<ul class="test-header">
+				<li class="link" onmouseenter="link_home_enter()" onmouseleave="link_home_leave()">Home
+					<ul id="show-home">
+						<li class="show-list">Engineering</li>
+						<li class="show-list">Telecom</li>
+						<li class="show-list">Energy</li>
+						<li class="show-list">Finance</li>
+						<li class="show-list">Consultancy</li>
+					</ul>
+				</li>
+				<li class="link" onmouseenter="link_about_enter()" onmouseleave="link_about_leave()">About
+					<ul id="show-about">
+						<li class="show-list">Engineering</li>
+						<li class="show-list">Telecom</li>
+						<li class="show-list">Energy</li>
+						<li class="show-list">Finance</li>
+						<li class="show-list">Consultancy</li>
+					</ul>
+				</li>
+				<li class="link" onmouseenter="link_products_enter()" onmouseleave="link_products_leave()">Products
+					<ul id="show-products">
+						<li class="show-list">Engineering</li>
+						<li class="show-list">Telecom</li>
+						<li class="show-list">Energy</li>
+						<li class="show-list">Finance</li>
+						<li class="show-list">Consultancy</li>
+					</ul>
+				</li>
+				<li class="link" onmouseenter="link_services_enter()" onmouseleave="link_services_leave()">Services
+					<ul id="show-services">
+						<li class="show-list">Engineering</li>
+						<li class="show-list">Telecom</li>
+						<li class="show-list">Energy</li>
+						<li class="show-list">Finance</li>
+						<li class="show-list">Consultancy</li>
+					</ul>
+				</li>
+				<li class="link" onmouseenter="link_contact_enter()" onmouseleave="link_contact_leave()">Contact
+					<ul id="show-contact">
+						<li class="show-list">Engineering</li>
+						<li class="show-list">Telecom</li>
+						<li class="show-list">Energy</li>
+						<li class="show-list">Finance</li>
+						<li class="show-list">Consultancy</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function link_home_enter(){
+			document.getElementById('show-home').style = "background: #008400";
+		}
+		function link_home_leave(){
+			document.getElementById('show-home').style = "background: #fff";
+		}
+		function link_about_enter(){
+			document.getElementById('show-about').style = "background: #008400";
+		}
+		function link_about_leave(){
+			document.getElementById('show-about').style = "background: #fff";
+		}
+		function link_products_enter(){
+			document.getElementById('show-products').style = "background: #008400";
+		}
+		function link_products_leave(){
+			document.getElementById('show-products').style = "background: #fff";
+		}
+		function link_services_enter(){
+			document.getElementById('show-services').style = "background: #008400";
+		}
+		function link_services_leave(){
+			document.getElementById('show-services').style = "background: #fff";
+		}
+		function link_contact_enter(){
+			document.getElementById('show-contact').style = "background: #008400";
+		}
+		function link_contact_leave(){
+			document.getElementById('show-contact').style = "background: #fff";
+		}
+	</script>
+</body>
+</html>

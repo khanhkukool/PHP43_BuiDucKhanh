@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 11</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style-bai11.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+</head>
+<body>
+	<div class="container">
+		<form class="form1" onsubmit="return check()">
+			<h1>Tìm giai thừa</h1>
+			<hr>
+			<p id="error" style="color: red;"></p>
+			<div class="row inputa">
+				<div class="col-md-6 col-12">
+					Nhập vào hệ số giai thừa:
+				</div>
+				<div class="col-md-6 col-12">
+					<input type="number" name="number" id="number" class="form-control">
+				</div>
+			</div>
+				<button type="submit" class="btn btn-primary">Tính giai giừa</button>
+			<p id="result" style="color: green;"></p>
+		</form>
+	</div>
+	<script type="text/javascript">
+		function check(){
+			var number = document.getElementById('number').value;
+			var result = 1;
+			var string = '1';
+			for(var i= 1; i<=number;i++){
+				result *= i;
+			}
+			for(var i = 2;i <=number; i++){
+				string += " x " + i;
+			}
+			if(number == 0){
+				document.getElementById('result').innerHTML = 0;
+			}
+			else if(number == 1){
+				document.getElementById('result').innerHTML = "<b>" + number + "!" + "</b> = " + result;
+			}
+			else{
+				document.getElementById('result').innerHTML = "<b>" + number + "!" + "</b> = " + string + " = " + result; 
+			}
+			return false;
+		}
+	</script>
+</body>
+</html>
