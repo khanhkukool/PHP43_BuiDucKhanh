@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="container">
-		<form class="form1" onsubmit="return check()">
+		<form class="form1" onclick="return check()">
 			<h1>Hiển thị *</h1>
 			<hr>
 			<p id="error" style="color: red;"></p>
@@ -30,12 +30,14 @@
 	<script type="text/javascript">
 		function check(){
 			var number = document.getElementById('number').value;
+			var string = '';
 			for(var i = 0; i < number; i++){
 				for(var j =0; j <= i; j++){
-					document.write("* ");
+					string += "* ";
 				}
-				document.write("<br/>");
+				string += "<br>";
 			}
+			document.getElementById('result').innerHTML = string;
 			return false;
 		}
 	</script>
