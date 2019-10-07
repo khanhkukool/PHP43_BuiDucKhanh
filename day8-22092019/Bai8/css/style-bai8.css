@@ -1,0 +1,19 @@
+@media (max-width: 767px){
+}
+
+.test-header{
+	background: green;
+	text-align: center;
+	height: 26px;
+}
+.link{
+	display: inline;
+	color: #fff;
+	margin-top: 2px;
+    display: inline-block;
+}
+
+.show-list{
+	text-align: start;
+	list-style: none;
+}
